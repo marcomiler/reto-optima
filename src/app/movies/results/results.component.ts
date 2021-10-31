@@ -13,6 +13,4 @@ export class ResultsComponent {
     return this.movieService.results;
   }
 
-
-
 }

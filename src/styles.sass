@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+
+.section-news
+  display: flex
+  justify-content: space-around
+  gap: 1rem
+
+  @media ( max-width: 768px )
+    margin: auto
+
+#sidebar
+  padding: 2rem
+  min-width: 100%
+  width: 15rem
+  min-height: 50vh
+  border-radius: .5rem
+  margin: 1rem 1rem 0 0.3rem
+
+  @media ( max-width: 768px )
+
+  h3
+    text-align: center
+
+  hr
+    padding: 0 0.2rem
+
+  .list-group
+    padding: .2rem
+
+    a
+      margin: 0.1rem
+
+.serie
+  word-wrap: break-word
+
+  h4
+    font-size: 20px
+
+  p
+    font-size: 20px
+
+.container__cards
+  gap: 0.5rem
+  display: flex
+  flex-wrap: wrap
+  margin: 0.5rem 0
+  justify-content: space-around
+
+.card
+  padding: 2px
+  display: flex
+  width: 15rem
+  height: 30rem
+  justify-content:center
+  flex-direction: column
+
+.card img
+  height: 40%
+
+.card a
+  padding-right: 1rem
+  align-self: flex-end
+
+
+.nav-link
+  cursor: pointer

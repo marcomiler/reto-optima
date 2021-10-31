@@ -1,12 +1,12 @@
-<div class="row">
-  <div *ngFor="let item of results" class="col-md-4 col-sm-6 animate__animated animate__fadeIn animate__delay-1s">
-      <div class="card">
-          <img [src]='item.urlToImage' [alt]="item.author" class="card-img-top">
-          <div class="card-body">
-              <p class="card-text">
-                  {{item.title}}
-              </p>
-          </div>
-      </div>
-  </div>
+<div class="container__cards">
+    <div *ngFor="let item of results" class="card" >
+        <img [src]='item.urlToImage' [alt]="item.author" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <strong>Author:</strong> {{item.author}}
+          <br>
+          <strong>published:</strong> {{item.publishedAt | date}}
+        </div>
+          <a href="{{item.url}}" class="">See more ...</a>
+    </div>
 </div>

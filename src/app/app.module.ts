@@ -5,19 +5,22 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
-import { MoviesModule } from './movies/movies.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MoviesModule } from './movies/movies.module';
+import { FibonacciModule } from './fibonacci/fibonacci/fibonacci.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+
+    MoviesModule,
     SharedModule,
-    MoviesModule
+    FibonacciModule
   ],
   providers: [],
   bootstrap: [AppComponent]

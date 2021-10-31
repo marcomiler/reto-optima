@@ -1,0 +1,29 @@
+  <div class="container">
+    <div class=" p-3">
+      <h5>Ingresar número:</h5>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter number..."
+          (keyup.enter)="search()"
+          #txtSearch
+        >
+      <hr>
+
+      <div class="row container_serie">
+        <div class="col">
+          <div *ngIf="!totalSerie.length; else divSerie" class="alert alert-info">
+            Ingrese un número, por favor
+          </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+
+<ng-template #divSerie>
+  <div class="serie">
+    <h4>Serie: </h4><p>{{totalSerie}}</p>
+
+  </div>
+</ng-template>
